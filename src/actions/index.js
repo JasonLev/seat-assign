@@ -40,6 +40,17 @@ export const setVisibilityFilter = filter => ({
   filter
 })
 
+export const fetchPosts = subreddit => dispatch => {
+  dispatch(requestPosts(subreddit))
+  return fetch('../constants/seed.json')
+    .then(response => response.json())
+    .then(json => {
+      //dispatch(receivePosts(subreddit, json))
+      console.log('data fetched:', json);
+    )
+}
+
+
 export const Displays = {
   SHOW_TABLES: 'SHOW_TABLES',
   SHOW_TABLE_FORM: 'SHOW_TABLE_FORM'

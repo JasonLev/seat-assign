@@ -1,0 +1,38 @@
+{
+  tables: [
+    {
+      id: 0,
+      name: 'SF Relatives',
+      seats: 8,
+      guestIDs: [
+        0
+      ],
+      guestFormDisplay: false
+    },
+    {
+      id: 1,
+      name: 'NYC Relatives',
+      seats: 8,
+      guestIDs: [
+        1
+      ],
+      guestFormDisplay: false
+    }
+  ],
+  display: 'SHOW_TABLES',
+  guests: [
+    {
+      id: 0,
+      name: 'Uncle Jerry',
+      tableID: 0
+    },
+    {
+      id: 1,
+      name: 'John Doe',
+      tableID: 1
+    }
+  ],
+  visibilityFilter: 'SHOW_ALL'
+}
+
+export defaul
